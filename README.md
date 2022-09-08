@@ -96,6 +96,7 @@ PASO 6: MODIFICACION DE LA PAGINA DRUPAL
     2. Una vez instalados, nos dirigimos a nuestra carpeta del proyecto en la linea de comandos, y ejecutamos el comando " composer require drupal/admin_toolbar ".
     3. Si buscamos luego en la pagina de DRUPAL el nombre del modulo  en la seccion " Administrar >> Filtro ", apareceran 4 opciones de Admin Toolbar, las cuales seleccionaremos y posteriormente le daremos clic a " Instalar ".
 
+-----------------------------------------------------------------------------
 PASO 7: INSTALACION DE BOOSTRAP - https://www.drupal.org/project/bootstrap5 -
     1. Ingresamos a nuestra linea de comandos, y nos ubicamos en la carpeta " web\themes " y alli ejecutamos el comando " composer require 'drupal/bootstrap5:^2.0' ".
     2. Se nos preguntara si deseamos usar el archivo .json que esta en otra ubicacion, presionamos " Y " y luego enter.
@@ -109,6 +110,7 @@ PASO 7: INSTALACION DE BOOSTRAP - https://www.drupal.org/project/bootstrap5 -
     7. Luego, dentro de ese subtema seleccionado, ingresamos a su configuracion y aplicamos los estilos de bootstrap que deseamos, donde incluso podremos cambiar el Favicon de la pagina. Luego de tener todas las configuraciones deseadas, presionamos el boton " Guardar configuracion ".
     8. De esta forma, se importaran todos los archivos CSS y JS para el correcto funcionamiento de Bootstrap 5.
 
+---------------------------------------------------------
 PASO 8: CREACION DE NUESTRA PRIMERA PAGINA " HOLA MUNDO "
     1. En el menu superior de DRUPAL, seleccionamos la opcion " Contenido >> Añadir contenido >> Pagina basica " para crear nuestra pagina principal.
     2. Luego seleccionamos un titulo para la página.

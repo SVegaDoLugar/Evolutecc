@@ -119,4 +119,16 @@ PASO 8: CREACION DE NUESTRA PRIMERA PAGINA " HOLA MUNDO "
     3. Si deseamos utilizar BOOTSTRAP, es necesario cambiar a la opcion " Fuente HTML " y en " Formato de texto " seleccionar la opcion " HTML COMPLETO ", permitiendo asi modificacion de las etiquetas HTML, agregando clases y atributos propios de bootstrap.
     4. Luego, dejamos marcada la opcion de " Published " y presionamos la opcion " Guardar ".
     5. Finalmente, para modificar nuestra nueva pagina como pagina principal del proyecto, nos dirigiremos al menu superior " Configuracion >> Sistema >> Configuraciones basicas del sitio " y en la opcion " Pagina inicial predeterminada ", pegamos la ruta de nuestra pagina, siendo en nuestro caso "/node/1 y presionamos el boton de " Guardar configuracion ".
+
+-----------------------------------------------------------
+PARA DESCARGAR ESTE REPOSITORIO Y USAR LA APLICACION DRUPAL
+    1. Ve al menu principal del repositorio y selecciona la opcion code >> HTTPS y posteriormente copia el link del repositorio.
+    2. En tu Git Bash, dirigete a la carpeta donde deseas guardar el proyecto, y ejecuta el comando " git clone **link del repositorio** ".
+    3. Luego de tener el proyecto descargado, nos dirigimos a la carpeta " db " y buscamos el archivo " option_1.sql ", el cual deberemos importar a nuestro phpMyAdmin
+        3.1. Para esto, ejecutamos xampp como administrador, y posteriormente en el navegador nos dirigimos a " http://localhost/phpmyadmin/ ".
+        3.2. Luego, en el menu de la derecha, seleccionamos la opcion " Nueva " para crear una nueva base de datos, la cual llamaremos " option_1 " y le daremos clic en " CREAR ".
+        3.2. Luego, en el menu superior, buscamos la opcion " Importar ".
+        3.3. Alli, importamos el archivo " option_1.sql " en la seccion " Archivo a importar ".
+        3.4. Finalmente, seleccionamos la opcion " Importar " ubicada en la parte baja.
+        3.5. Listo, ya es posible conectar esta base de datos a nuestro servidor web.
     

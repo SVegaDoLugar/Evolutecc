@@ -132,3 +132,5 @@ PARA DESCARGAR ESTE REPOSITORIO Y USAR LA APLICACION DRUPAL
         3.4. Finalmente, seleccionamos la opcion " Importar " ubicada en la parte baja.
         3.5. Listo, ya es posible conectar esta base de datos a nuestro servidor web.
     
+        
+        IMPORTANTE: PARA PODER INGRESAR AL PROYECTO DE DRUPAL, UNA VEZ ACTIVADO EL SERVIDOR, NOS DIRIGIMOS A LA SECCION DE LA PAGINA " INICIAR SESION " Y DIGITAMOS LOS CAMPOS 1) NOMBRE DE USUARIO: " samuel ", 2) CONTRASEÑA: " 123 ". UNA VEZ LOGUEADOS, NOS DIRIGIMOS A LA SIGUIENTE RUTA DEL NAVEGADOR " http://localhost:3000/web/index.php ".

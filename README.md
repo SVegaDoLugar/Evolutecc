@@ -1,6 +1,5 @@
 # Evolutecc
 
-Opcion 1
 ------------------------------------------------------------------------------------------------------
 PASO 1: CONFIGURACION DE ENTORNO DE DESARROLLO - EN CASO DE NO TENER CONFIGURADO PHP, MYSQL y composer
   1.1. INSTALACION DE XAMPP - permite el uso de PHP (1), MySQL (2) y simulacion de servidor web (3) -

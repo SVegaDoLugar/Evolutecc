@@ -134,3 +134,25 @@ PARA DESCARGAR ESTE REPOSITORIO Y USAR LA APLICACION DRUPAL
     
         
         IMPORTANTE: PARA PODER INGRESAR AL PROYECTO DE DRUPAL, UNA VEZ ACTIVADO EL SERVIDOR, NOS DIRIGIMOS A LA SECCION DE LA PAGINA " INICIAR SESION " Y DIGITAMOS LOS CAMPOS 1) NOMBRE DE USUARIO: " samuel ", 2) CONTRASEÑA: " 123 ". UNA VEZ LOGUEADOS, NOS DIRIGIMOS A LA SIGUIENTE RUTA DEL NAVEGADOR " http://localhost:3000/web/index.php ".
+       
+----------------------------------------------------
+PASOS ADICIONALES PARA ACTIVAR EL MODO DE DESARROLLO
+PASO 9: INSTALAR DEVEL
+    1. En Windows PowerShell, dentro de nuestra carpeta de proyecto, ejecutamos el comando " composer require drupal/devel "
+    2. Luego, en el localhost de drupal, nos dirigimos a la sección de " Ampliar "; luego en el filtro, seleccionamos " Devel " y presionamos " Instalar ".
+    3. Posteriormente, ingresamos a la sección " Configuración >> Desarrollo >> Devel settings", y allí cambiaremos las Variables Dumper, y seleccionamos " Symfony var-dumper " y guardamos la configuración.
+    
+PASO 10: INSTALAR ADMIN TOOLBAR - FACILITA LA NAVEGACIÓN -
+    1. En Windows PowerShell, dentro de nuestra carpeta de proyecto, ejecutamos el comando " composer require drupal/admin_toolbar ".
+    2. Luego, en el localhost de drupal, nos dirigimos a la sección de " Ampliar "; luego en el filtro, seleccionamos las 2 opciones de " Admin Toolbar " y " Admin Toolbar Extra Tools ", presionamos " Instalar ".
+
+PASO 11. ACTIVACIÓN DE MODO DESARROLLO
+    1. En la carpeta del proyecto, nos dirigimos a " web >> sites >> default >> settings.php ".
+    2. Sobre este archivo, presionamos clic derecho para acceder a las propiedades; finalmente, desmarcamos la opción de " Solo lectura ".
+    3. Luego, ingresamos al archivo, y descomentamos las casillas de la 779 hasta la 781 - contienen un condicional " if (file_exist... ") -
+        3.1. Este condicional, buscará un archivo llamado " settings.local.php ", el cual deberemos crear.
+    4. Procedemos a crear el archivo " settings.local.php ", copiando el archivo dentro de la carpeta " web >> sites >> example.settings.local.php ", y lo copiamos dentro de la carpeta default, cambiando su nombre a " settings.local.php ".
+    5. Luego, ingresamos a ese archivo y descomentamos la línea 69 " # $settings['cache']['bins']['render'] = 'cache.backend.null'; ".
+    6. Descomentamos también la línea 91 " # $settings['cache']['bins']['page'] = 'cache.backend.null'; "
+    7. Descomentamos también la línea 100 " # $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null'; "
+    8. Finalmente, guardamos el archivo y nos dirigimos al localhost de drupal y vaciamos todas las cachés.
